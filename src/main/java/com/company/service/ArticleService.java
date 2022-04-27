@@ -197,6 +197,7 @@ public class ArticleService {
             throw new ItemNotFoundException("Item not found");
         }
         articleRepository.updateStatus(ArticleStatus.BLOCKED,id);
+
         return true;
     }
 
